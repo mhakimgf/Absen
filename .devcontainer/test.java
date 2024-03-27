@@ -1,3 +1,4 @@
+import java.util.Scanner;
 // Define the NameBuilder interface
 interface NameBuilder {
     String buildName();
@@ -36,6 +37,7 @@ class NameBuilderFactory {
 // Usage example
 public class Main {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         // Get the first name builder from the factory
         NameBuilder firstNameBuilder = NameBuilderFactory.getNameBuilder("first");
         String firstName = firstNameBuilder.buildName();
